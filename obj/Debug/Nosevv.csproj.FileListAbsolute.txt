@@ -1,0 +1,11 @@
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.csproj.AssemblyReference.cache
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.Form1.resources
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.Properties.Resources.resources
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.csproj.GenerateResource.cache
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.csproj.CoreCompileInputs.cache
+C:\Yuquita\Nosevv\Nosevv\bin\Debug\Nosevv.exe.config
+C:\Yuquita\Nosevv\Nosevv\bin\Debug\Nosevv.exe
+C:\Yuquita\Nosevv\Nosevv\bin\Debug\Nosevv.pdb
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.exe
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.pdb
+C:\Yuquita\Nosevv\Nosevv\obj\Debug\Nosevv.exe.config
