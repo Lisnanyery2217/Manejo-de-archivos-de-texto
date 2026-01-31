@@ -37,14 +37,14 @@ namespace Nosevv
             dgvEmpleados.Columns.Add("genero", "GENERO");
             dgvEmpleados.Columns.Add("fecha", "FECHA INGRESO");
 
-            // ComboBox Cargo
+           
             comboBoxCargo.Items.AddRange(new string[]
             {
                 "Administrador",
                 "Empleado"
             });
 
-            // ComboBox Género
+           
             comboBoxGenero.Items.AddRange(new string[]
             {
                 "Masculino",
@@ -54,7 +54,7 @@ namespace Nosevv
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // VALIDAR CAMPOS VACÍOS
+       
             if (string.IsNullOrWhiteSpace(txtId.Text) ||
                 string.IsNullOrWhiteSpace(txtNombre.Text) ||
                 string.IsNullOrWhiteSpace(txtApellidos.Text) ||
@@ -70,7 +70,7 @@ namespace Nosevv
                 return;
             }
 
-            // VALIDAR COMBOBOX
+           
             if (comboBoxCargo.SelectedIndex == -1 ||
                 comboBoxGenero.SelectedIndex == -1)
             {
@@ -81,7 +81,7 @@ namespace Nosevv
                 return;
             }
 
-            // VALIDAR NUMÉRICOS
+           
             if (!int.TryParse(txtId.Text, out int id) ||
                 !int.TryParse(txtNumero.Text, out int numero) ||
                 !int.TryParse(txtSalario.Text, out int salario))
@@ -93,7 +93,7 @@ namespace Nosevv
                 return;
             }
 
-            // AGREGAR AL DATAGRIDVIEW
+          
             dgvEmpleados.Rows.Add(
                 id,
                 txtNombre.Text,
@@ -107,7 +107,7 @@ namespace Nosevv
                 dateTimePickerFecha.Value.ToShortDateString()
             );
 
-            // PREGUNTAR SI DESEA GUARDAR
+           
             DialogResult r = MessageBox.Show(
                 "¿Desea guardar los datos en un archivo TXT?",
                 "Confirmación",
@@ -117,7 +117,7 @@ namespace Nosevv
             if (r != DialogResult.Yes)
                 return;
 
-            // GUARDAR ARCHIVO
+           
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Archivos de texto (*.txt)|*.txt";
             sfd.Title = "Guardar archivo";
@@ -153,7 +153,6 @@ namespace Nosevv
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
 
-            // ABRIR ARCHIVO
             Process.Start(new ProcessStartInfo
             {
                 FileName = sfd.FileName,
